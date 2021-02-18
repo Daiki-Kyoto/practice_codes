@@ -1,0 +1,70 @@
+@media all and (max-width: 1000px) {
+  .headerOuter-wrap {
+    height: 300px;
+    background-size: cover;
+  }
+  .nav-list p {
+    font-size: 15px;
+  }
+  footer {
+    height: 150px;
+  }
+  .f-txt h3 {
+    font-size: 15px;
+  }
+  .f-txt p {
+    font-size: 10px;
+  }
+
+}
+
+
+
+
+@media all and (max-width: 500px) {
+  .header-container i {
+    display: block;
+  }
+  .h-list {
+    display: none;
+  }
+  .headerOuter-wrap {
+    height: 200px;
+    background-size: cover;
+  }
+  .nav {
+    height: 40px;
+  }
+  .nav-list p {
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+  }
+  .nav-companies1 {
+    display: none;
+  }
+  .nav-companies2 {
+    display: block;
+  }
+  footer {
+    text-align: center;
+  }
+  .f-txt {
+    text-align: center;
+    padding: 25px 0 0 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .f-txt h3 {
+    font-size: 15px;
+  }
+  .f-txt p {
+    font-size: 10px;
+  }
+  .f-sns {
+    padding-top: 25px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+}
