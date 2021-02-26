@@ -19,6 +19,7 @@ html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, input, div {
 .headerOuter-wrap {
   background-image: url("./image/top-image.jpg");
   background-position: 45% top;
+  background-size: cover;
   height: 600px;
   position: relative;
   background-repeat: no-repeat;
@@ -107,7 +108,7 @@ header {
 .m-subtitle {
   padding-bottom: 30px;
 }
-.m-txt {
+.m-txt {
   margin: 120px;
 }
 .band-image img {
