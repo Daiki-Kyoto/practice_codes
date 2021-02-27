@@ -90,6 +90,7 @@ header img {
 	font-size: 32px;
 	padding: 16px;
 	cursor: pointer;
+	display: none;
 }
 
 /* トップ画像に関するデザイン */
