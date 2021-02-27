@@ -1,177 +1,256 @@
 * {
-  box-sizing: border-box;
-}
-li {
-  list-style: none;
-}
-html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, input, div {
-  margin: 0;
-  padding: 0;
-}
-.wrap {
-  width: 100%;
-}
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
 }
 
-.headerOuter-wrap {
-  background-image: url("./image/top-image.jpg");
-  background-position: 45% top;
-  background-size: cover;
-  height: 600px;
-  position: relative;
-  background-repeat: no-repeat;
+#count {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: white;
+	position: fixed;
+	top: 100px;
+	z-index: 6;
+	/* display: none; */
 }
+
+.wrap {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/* ヘッダーに関するデザイン */
 header {
-  height: 60px;
-  background-color: rgba(0, 7, 111, 0.9);
-  position: fixed;
-  top: 0;
-  z-index: 10;
+	background-color: rgba(0, 7, 111, 0.9);
+	height: 64px;
+	width: 100%;
+	position: fixed;
+	color: white;
+	z-index: 5;
 }
-.header-container img {
-  height: 60px;
-  margin: 0 10px;
-  float: left;
+
+header img {
+	height: 50px;
+	line-height: 64px;
+	padding: 7px;
 }
-.header-container i {
-  font-size: 25px;
-  color: #fff;
-  padding: 17px 10px;
-  float: right;
-  display: none;
+
+#sidemenu {
+	display: none;
+	background-color: #374660;
+	width: 60%;
+	height: 100vh;
+	position: fixed;
+	top: 64px;
+	right: 0;
 }
-.h-list {
-  float: right;
-  display: none;
+#sidemenu li {
+	list-style: none;
 }
-.h-list p {
-  float: left;
-  color: #fff;
-  padding: 0 20px;
-  line-height: 60px;
+#sidemenu li + li {
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
-.h-list p:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
+#sidemenu a {
+	padding-left: 20px;
+	text-decoration: none;
+	color: white;
+	line-height: 48px;
+	font-size: 24px;
 }
+
+#menubar {
+	display: none;
+	float: right;
+}
+
+#menubar ul {
+	list-style: none;
+	display: flex;
+	padding-right: 12px;
+}
+
+#menubar a {
+	color: white;
+	text-decoration: none;
+	line-height: 64px;
+	font-size: 12px;
+	padding: 25px 12px;
+}
+#menubar a:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+#bars {
+	float: right;
+	font-size: 32px;
+	padding: 16px;
+	cursor: pointer;
+}
+
+/* トップ画像に関するデザイン */
+.headerOuter-wrap {
+	background-image: url(./image/top-image.jpg);
+	background-size: cover;
+	background-position: 40% 30%;
+	height: 500px;
+	color: white;
+	position: relative;
+}
+
 .h-txt {
-  text-align: right;
-  color: rgba(255, 255, 255, 0.85);
-  padding: 200px 20px 0 0;
+	padding: 120px 30px 0 0;
+	text-align: right;
 }
-.nav {
-  height: 60px;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+
+.h-txt h1, .h-txt h1 span {
+	font-size: 20px;
+	padding-bottom: 20px;
 }
-.nav-list {
-  padding: 0 10px;
+.h-txt p, .h-txt p span {
+	font-size: 13px;
 }
-.nav-list p {
-  width: 20%;
-  height: 60px;
-  float: left;
-  font-size: 30px;
-  border-left: 1px solid #fff;
-  color: rgb(0, 0, 0);
-  line-height: 60px;
+.space60px {
+	margin-right: 60px;
 }
-.nav-list p:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
+.space80px {
+	margin-right: 80px;
 }
-.nav-contact {
-  border-right: 1px solid #fff;
+
+.headerOuter-wrap nav {
+	background-color: rgba(255, 255, 255, 0.4);
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	padding: 8px 0;
+	bottom: 0;
+	
 }
-.nav-companies2 {
-  display: none;
+.headerOuter-wrap ul {
+	list-style: none;
+	text-align: center;
+	justify-content: center;
+	display: flex;
 }
-.main-wrapper {
-  background-color: #e2e2e2;
-  height: 2400px;
+
+.headerOuter-wrap li a {
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+	padding: 0 12px;
 }
-.main-contents {
-  padding: 70px 20px;
+.headerOuter-wrap li a:hover {
+	color: rgba(0, 7, 111, 0.5);
 }
+
+.headerOuter-wrap li + li {
+	border-left: 1px solid white;
+}
+
+/* メインコンテンツのデザイン */
+
+main {
+	background-color: #e2e2e2;
+	height: 1750px;
+}
+
 .mission {
-  text-align: center;
-  display: none;
+	text-align: center;
+	display: none;
 }
-.m-title {
-  padding: 40px 0 30px 0;
+.mission h1 {
+	font-size: 24px;
+	padding: 40px 0 20px;
 }
-.m-subtitle {
-  padding-bottom: 30px;
+.mission h2 {
+	font-size: 16px;
 }
 .m-txt {
-  margin: 120px;
-}
-.band-image img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: none;
-  object-position: center 15%;
-}
-.band-image {
-  position: relative;
-}
-.band-image::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: inset 0px 0 15px 15px #e2e2e2;
-}
-.messages {
-  padding-top: 120px;
-  display: none;
-  text-align: center;
-}
-.m-title2 {
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  text-align: left;
-  border-bottom: 1px solid rgb(200, 200, 200);
-}
-.visit-mtg {
-  padding-top: 200px;
-  display: none;
-  text-align: center;
-}
-.mtg-info {
-  padding: 55px;
-  float: left;
-  text-align: left;
-}
-.visit-mtg img {
-  height: 300px;
-  padding: 20px;
-  transform: rotate(5deg);
+	padding: 64px 12px 32px;
 }
 
+.band-image img {
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+	display: none;
+	object-position: center 15%;
+}
+.band-image {
+	position: relative;
+	width: 100%;
+}
+
+.band-image::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: inset 0px 0 15px 15px #e2e2e2;
+}
+
+.messages {
+	display: none;
+}
+
+.subtitle {
+	font-size: 18px;
+	padding: 40px 0 12px;
+	margin: 0 12px 24px;
+	border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.m-txt-message {
+	padding: 0 12px 20px;
+	text-align: center;
+}
+
+.visit-mtg {
+	display: none;
+}
+
+.mtg-info {
+	width: 312px;
+	padding: 0 24px;
+	margin: 0 auto;
+}
+
+.visit-mtg img {
+	display: block;
+	height: 150px;
+	padding: 20px 10px;
+	margin: 0 auto;
+	transform: rotate(5deg);
+}
+
+
 footer {
-  background-color: #374660;
-  height: 200px;
-  color: #fff;
+	text-align: center;
+	height: 100px;
+	background-color: #374660;
+	opacity: 0.8;
+	color: #fff;
+}
+footer h1 {
+	font-size: 12px;
+	font-weight: normal;
+}
+footer p {
+	font-size: 8px;
 }
 .f-txt {
-  padding: 50px 0 0 20px;
-  float: left;
+	font-size: 8px;
+	padding: 20px 0 10px;
 }
-.f-sns {
-  float: right;
-  font-size: 30px;
-  padding: 60px 20px 0 20px;
-}
+
 .f-sns i {
-  margin: 0 10px;
-  color: #fff;
+	margin: 0 10px;
+	color: #fff;
 }
+

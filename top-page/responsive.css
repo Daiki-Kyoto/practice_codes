@@ -1,4 +1,75 @@
-@media all and (max-width: 1000px) {
+@media (min-width: 500px) {
+  .space60px {
+    margin-right: 0;
+  }
+  .space80px {
+    margin-right: 0;
+  }
+  main {
+    height: 1650px;
+  }
+  
+  .headerOuter-wrap nav a {
+    font-size: 18px;
+    padding: 0 12px;
+  }
+  
+  
+  .mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    height: 1500px;
+  }
+  #bars {
+    display: none;
+  }
+
+
+
+
+
+  .mtg-info {
+    padding-top: 20px;
+    float: left;
+    margin: none;
+  }
+  .visit-mtg img {
+    display: inline-block;
+  }
+  .mtg-contents {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .tab {
+    display: none;
+  }
+  main {
+    height: 1450px;
+  }
+  .h-txt h1, .h-txt h1 span {
+    font-size: 32px;
+    /* padding-bottom: 20px; */
+  }
+  .h-txt p, .h-txt p span {
+    font-size: 24px;
+  }
+  .headerOuter-wrap li a {
+    padding: 0 48px;
+    font-size: 24px;
+  }
+
+}
+
+
+
+/* @media all and (max-width: 1000px) {
   .h-txt h1 {
     font-size: 23px;
   }
@@ -87,4 +158,4 @@
   }
 
 
-}
+} */
