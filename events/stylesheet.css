@@ -150,7 +150,8 @@ header img {
 	border-left: 1px solid white;
 }
 
-.main-contents {
+main {
+  background-color: #e2e2e2;
   height: 2000px;
 }
 /* フッターに関わるcss */
