@@ -6,15 +6,13 @@
     margin-right: 0;
   }
   main {
-    height: 1650px;
+    height: 1750px;
   }
-  
   .headerOuter-wrap nav a {
-    font-size: 18px;
+    font-size: 15px;
     padding: 0 12px;
   }
-  
-  
+
   .mobile {
     display: none;
   }
@@ -22,15 +20,11 @@
 
 @media (min-width: 600px) {
   main {
-    height: 1500px;
+    height: 1600px;
   }
   #bars {
     display: none;
   }
-
-
-
-
 
   .mtg-info {
     padding-top: 20px;
@@ -44,6 +38,24 @@
     width: 600px;
     margin: 0 auto;
   }
+  footer {
+    text-align: unset;
+  }
+  footer > .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer h1 {
+    font-size: 12px;
+  }
+  footer p {
+    font-size: 8px;
+  }
+  .f-sns {
+    padding-right: 24px;
+    font-size: 24px;
+    align-self: center;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -51,7 +63,7 @@
     display: none;
   }
   main {
-    height: 1450px;
+    height: 1550px;
   }
   .h-txt h1, .h-txt h1 span {
     font-size: 32px;
@@ -64,98 +76,22 @@
     padding: 0 48px;
     font-size: 24px;
   }
-
-}
-
-
-
-/* @media all and (max-width: 1000px) {
-  .h-txt h1 {
-    font-size: 23px;
-  }
-  .h-txt h3 {
-    font-size: 17px;
-  }
-  .nav-list p {
-    font-size: 20px;
-  }
-  .nav-companies1 {
-    font-size: 15px;
-  }
   footer {
     height: 150px;
   }
-  .f-txt h3 {
-    font-size: 15px;
+  footer > .wrap {
+    padding-top: 24px;
   }
-  .f-txt p {
-    font-size: 10px;
+  footer h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  .f-txt {
+    padding-left: 24px;
   }
 
 }
 
-
-
-
-@media all and (max-width: 500px) {
-  .header-container i {
-    display: block;
-  }
-  .h-list {
-    display: none;
-  }
-  .h-wrapper {
-    height: 450px;
-    background-size: cover;
-  }
-  .h-txt {
-    padding: 300px 20px 0 0;
-  }
-  .h-txt h1 {
-    font-size: 14px
-  }
-  .h-txt h3 {
-    font-size: 10px;
-  }
-
-  .nav {
-    height: 40px;
-  }
-  .nav-list p {
-    height: 40px;
-    font-size: 15px;
-    line-height: 40px;
-  }
-  .nav-companies1 {
-    display: none;
-  }
-  .nav-companies2 {
-    display: block;
-  }
-  .m-title {
-    padding: 20px 0 10px 0;
-    font-size: 15px;
-  }
-  footer {
-    text-align: center;
-  }
-  .f-txt {
-    text-align: center;
-    padding: 25px 0 0 0;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .f-txt h3 {
-    font-size: 15px;
-  }
-  .f-txt p {
-    font-size: 10px;
-  }
-  .f-sns {
-    padding-top: 25px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-
-} */
