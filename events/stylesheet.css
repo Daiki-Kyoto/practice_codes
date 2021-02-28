@@ -155,20 +155,25 @@ header img {
 }
 /* フッターに関わるcss */
 footer {
-  background-color: #374660;
-  height: 200px;
-  color: #fff;
+	text-align: center;
+	height: 100px;
+	background-color: #374660;
+	opacity: 0.8;
+	color: #fff;
+}
+footer h1 {
+	font-size: 12px;
+	font-weight: normal;
+}
+footer p {
+	font-size: 8px;
 }
 .f-txt {
-  padding: 50px 0 0 20px;
-  float: left;
+	font-size: 8px;
+	padding: 20px 24px 10px;
 }
-.f-sns {
-  float: right;
-  font-size: 30px;
-  padding: 60px 20px 0 20px;
-}
+
 .f-sns i {
-  margin: 0 10px;
-  color: #fff;
+	margin: 0 10px;
+	color: #fff;
 }
