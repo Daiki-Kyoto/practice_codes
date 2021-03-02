@@ -50,6 +50,8 @@ header img {
 	position: fixed;
 	top: 64px;
 	right: 0;
+	transition: transform .5s;
+	transform: translateX(100%);
 }
 #sidemenu li {
 	list-style: none;
