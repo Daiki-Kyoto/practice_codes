@@ -177,6 +177,7 @@ header img {
 
 main {
   height: 33000px;
+  background-color: #e2e2e2;
   text-align: center;
 }
 
@@ -199,6 +200,8 @@ section > h1 {
 .member-img {
   width: 200px;
   height: 200px;
+  border-radius: 20px;
+	box-shadow: rgba(0,0,0,0.2) 4px 12px 40px 6px;
 }
 
 /* .jump-page {
