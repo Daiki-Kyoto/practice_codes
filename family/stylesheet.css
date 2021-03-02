@@ -10,20 +10,24 @@ body {
 }
 
 .toTopPage {
+  z-index: 5;
+  background-color: rgb(200, 200, 200);
+  color: #374660;
+  height: 61px;
+  width: 61px;
+  border-radius: 50%;
+  text-align: center;
   font-size: 50px;
   cursor: pointer;
   position: fixed;
-  bottom: 30px;
+  bottom: 110px;
   right: 20px;
-  text-align: center;
-  display: none;
-
 }
-.toTopPage {
-  background-color: rgb(200, 200, 200);
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
+.fa-angle-up {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  line-height: 60px;
 }
 
 #count {
@@ -53,6 +57,9 @@ header {
 	position: fixed;
 	color: white;
 	z-index: 5;
+}
+header a {
+  text-decoration: none;
 }
 
 header img {
@@ -172,69 +179,50 @@ header img {
 /* メインコンテンツのデザイン ----------------------------------------*/
 
 .sidebanner {
-  display: none;
+  /* display: none; */
+  left: 10px;
+  width: 50px;
+  height: 200px;
+  background-color: #374660;
+  top: 300px;
+  position: fixed;
+  text-align: center;
+  border-radius: 10px;
 }
 
+.sidebanner ul {
+  padding: 30px 10px;
+  list-style: none;
+}
+.sidebanner a {
+  color: white;
+  text-decoration: none;
+}
+
+
 main {
-  height: 33000px;
+  height: 10000px;
   background-color: #e2e2e2;
   text-align: center;
 }
 
-
-
 section > h1 {
   font-size: 24px;
-  padding: 30px 0 20px;
+  padding: 64px 0 20px;
 }
-
 .member {
   padding: 10px 0;
 }
-
 .name-j {
   font-size: 18px;
 }
-
-
 .member-img {
   width: 200px;
   height: 200px;
   border-radius: 20px;
-	box-shadow: rgba(0,0,0,0.2) 4px 12px 40px 6px;
+	box-shadow: rgba(0,0,0,0.1) 4px 12px 40px 6px;
 }
 
-/* .jump-page {
-  float: left;
-  padding-top: 60px;
-}
-
-.member {
-  width: 50%;
-  float: left;
-  padding: 10px 20px;
-}
-
-.member-img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-  float: left;
-}
-.profile {
-  display: inline-block;
-  height: 200px;
-  padding: 40px 0 0 40px;
-}
-.name-j, .name-e, .univ {
-  padding-bottom: 20px;
-}
-.name-j {
-  font-size: 20px;
-}
-.name-e {
-  font-size: 20px;
-} */
 
 
 /* フッターに関わるcss */

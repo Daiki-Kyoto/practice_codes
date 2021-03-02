@@ -31,6 +31,20 @@ $(function() {
     }
   });
 
+
+  $('.toTopPage').click(function(){
+    $('html, body').animate({
+      'scrollTop':0
+    }, 500);
+  });
+  $win.scroll(function() {
+    if($(this).scrollTop() > 0) {
+      $('.toTopPage').fadeIn();
+    } else {
+      $('.toTopPage').fadeOut();
+    }
+  });
+
   // ミッションを一定スクロールで表示
   // var $mis = $('.mission');
   // $win.scroll(function() {
@@ -58,7 +72,7 @@ $(function() {
   //   }
   // });
 
-  
+
 
   // メッセージを一定スクロールで表示
   // var $mes = $('.messages');

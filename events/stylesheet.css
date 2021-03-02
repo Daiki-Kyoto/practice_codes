@@ -176,7 +176,7 @@ section p {
 section img {
 	width: 100%;
 	border-radius: 20px;
-	box-shadow: rgba(0,0,0,0.2) 4px 12px 40px 6px;
+	box-shadow: rgba(0,0,0,0.15) 4px 12px 40px 6px;
 }
 
 .morePage {
