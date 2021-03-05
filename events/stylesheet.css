@@ -26,6 +26,10 @@ body {
 	margin: 0 auto;
 }
 
+.pc {
+	display: none;
+}
+
 /* ヘッダーに関するデザイン */
 header {
 	background-color: rgba(0, 7, 111, 0.9);
@@ -153,7 +157,7 @@ header img {
 /* メインコンテンツのデザイン */
 main {
   background-color: #e2e2e2;
-  height: 2000px;
+  height: 1800px;
 }
 
 section {
@@ -179,6 +183,7 @@ section img {
 	border-radius: 20px;
 	box-shadow: rgba(0,0,0,0.15) 4px 12px 40px 6px;
 }
+
 
 .morePage {
 	width: 100px;

@@ -5,7 +5,7 @@
   }
 
   main {
-    height: 1750px;
+    height: 1850px;
   }
   section {
     width: 476px;
@@ -14,9 +14,7 @@
 }
 
 @media (min-width: 600px) {
-  main {
-    height: 1600px;
-  }
+
   #bars {
     display: none;
   }
@@ -43,6 +41,12 @@
 }
 
 @media (min-width: 1000px) {
+  .tab {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
   main {
     height: 1550px;
   }
@@ -56,6 +60,30 @@
   .h-txt h1 {
     font-size: 32px;
   }
+
+  section {
+    width: 1000px;
+    /* display: flex; */
+  }
+  section h1 {
+    padding-bottom: 30px;
+  }
+
+  section img {
+    width: 500px;
+
+  }
+  .explain {
+    width: 500px;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    float: right;
+    align-self: center;
+  }
+
+
+
+
 
   footer {
     height: 150px;
