@@ -159,6 +159,7 @@ main {
 section {
 	padding: 20px 12px;
 	text-align: center;
+	margin: 0 auto;
 }
 section h1 {
 	font-size: 24px;
