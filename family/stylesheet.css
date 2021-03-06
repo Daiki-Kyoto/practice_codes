@@ -20,7 +20,7 @@ body {
   font-size: 50px;
   cursor: pointer;
   position: fixed;
-  bottom: 110px;
+	bottom: 110px;
   right: 20px;
 }
 .fa-angle-up {
@@ -201,7 +201,7 @@ header img {
 
 
 main {
-  height: 10000px;
+  height: 9500px;
   background-color: #e2e2e2;
   text-align: center;
 }

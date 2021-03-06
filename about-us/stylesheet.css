@@ -1,120 +1,170 @@
 * {
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 12px;
+	font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-li {
-  list-style: none;
-}
-
-html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, input, div {
-  margin: 0;
-  padding: 0;
+#count {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: white;
+	position: fixed;
+	top: 100px;
+	z-index: 6;
+	display: none;
 }
 
 .wrap {
-  width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
+.pc {
+	display: none;
 }
 
-.headerOuter-wrap {
-  background-image: url("./image/top-image.jpg");
-  background-position: center 40%;
-  height: 400px;
-  position: relative;
-}
-
+/* ヘッダーに関するデザイン */
 header {
-  height: 60px;
-  background-color: rgba(0, 7, 111, 0.9);
-  position: fixed;
+	background-color: rgba(0, 7, 111, 0.9);
+	height: 64px;
+	width: 100%;
+	position: fixed;
+	color: white;
+	z-index: 5;
+}
+
+header img {
+	height: 50px;
+	line-height: 64px;
+	padding: 7px;
+}
+
+#sidemenu {
+	display: none;
+	background-color: #374660;
+	width: 60%;
+	height: 100vh;
+	position: fixed;
+	top: 64px;
+	right: 0;
+}
+#sidemenu li {
+	list-style: none;
+}
+#sidemenu li + li {
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+#sidemenu a {
+	padding-left: 20px;
+	text-decoration: none;
+	color: white;
+	line-height: 48px;
+	font-size: 24px;
+}
+
+#menubar {
+	display: none;
+	float: right;
+}
+
+#menubar ul {
+	list-style: none;
+	display: flex;
+	padding-right: 12px;
+}
+
+#menubar a {
+	color: white;
+	text-decoration: none;
+	line-height: 64px;
+	font-size: 12px;
+	padding: 25px 12px;
+}
+#menubar a:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+#bars {
+	float: right;
+	font-size: 32px;
+	padding: 16px;
+	cursor: pointer;
+	display: none;
+}
+
+/* トップ画像に関するデザイン */
+.headerOuter-wrap {
+	background-image: url(./image/top-image.jpg);
+	background-size: cover;
+	background-position: 40% 30%;
+	height: 250px;
+	color: white;
+	position: relative;
+}
+.headerOuter-wrap::before {
+	background-color: rgba(0, 0, 0, 0.3);
+	content: '';
   top: 0;
-  z-index: 10;
-}
-
-.header-container img {
-  height: 40px;
-  margin: 10px;
-  float: left;
-}
-
-.header-container i {
-  font-size: 25px;
-  color: #fff;
-  padding: 17px 10px;
-  float: right;
-  display: none;
-}
-
-.h-list {
-  float: right;
-  display: none;
-}
-
-.h-list p {
-  float: left;
-  color: #fff;
-  padding: 0 20px;
-  line-height: 60px;
-}
-
-.h-list p:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
-}
-
-.h-txt {
-  text-align: right;
-  color: rgba(255, 255, 255, 0.85);
-  padding: 200px 20px 0 0;
-}
-
-.nav {
-  height: 60px;
-  text-align: center;
+  right: 0;
+	bottom: 0;
+	left: 0;
   position: absolute;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.nav-list {
-  padding: 0 10px;
+.headerOuter-wrap h1 {
+  font-size: 20px;
+  position: absolute;
+	padding: 120px 30px 20px 0;
+  right: 0;
 }
 
-.nav-list p {
-  width: 20%;
-  height: 60px;
-  float: left;
-  font-size: 30px;
-  border-left: 1px solid #fff;
-  color: rgb(0, 0, 0);
-  line-height: 60px;
+.headerOuter-wrap nav {
+	background-color: rgba(255, 255, 255, 0.4);
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	padding: 8px 0;
+	bottom: 0;
+}
+.headerOuter-wrap ul {
+	list-style: none;
+	text-align: center;
+	justify-content: center;
+	display: flex;
 }
 
-.nav-companies2 {
-  display: none;
+.headerOuter-wrap li a {
+	text-decoration: none;
+	color: white;
+	padding: 0 10px;
+}
+.headerOuter-wrap li a:hover {
+	color: rgba(0, 7, 111, 0.5);
 }
 
-.nav-list p:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
+.headerOuter-wrap li + li {
+	border-left: 1px solid white;
 }
 
-.nav-contact {
-  border-right: 1px solid #fff;
+/* メインコンテンツのデザイン */
+main {
+  background-color: #e2e2e2;
+  height: 700px;
 }
 
-.main-contents {
-  height: 1000px;
-}
 
 .details {
   width: 60%;
   height: 700px;
-  margin: 100px auto;
+  margin: 0 auto;
   border-collapse: collapse;
 
 }
@@ -134,23 +184,25 @@ header {
 
 /* フッターに関わるcss */
 footer {
-  background-color: #374660;
-  height: 200px;
-  color: #fff;
+	text-align: center;
+	height: 100px;
+	background-color: #374660;
+	opacity: 0.8;
+	color: #fff;
 }
-
+footer h1 {
+	font-size: 12px;
+	font-weight: normal;
+}
+footer p {
+	font-size: 8px;
+}
 .f-txt {
-  padding: 50px 0 0 20px;
-  float: left;
-}
-
-.f-sns {
-  float: right;
-  font-size: 30px;
-  padding: 60px 20px 0 20px;
+	font-size: 8px;
+	padding: 20px 24px 10px;
 }
 
 .f-sns i {
-  margin: 0 10px;
-  color: #fff;
+	margin: 0 10px;
+	color: #fff;
 }

@@ -1,44 +1,47 @@
 $(function() {
+
+  $(window).scroll(function() {
+    document.getElementById('count').innerText = $(this).scrollTop();
+  });
+
+  $('.menu-icon').click(function() {
+    $('#sidemenu').toggle();
+  });
+
+
   // ヘッダーのナビゲーションを一定スクロールで表示
-  var hList = $('.h-list');
   var $win = $(window)
+
+  var menubar = $('#menubar');
   $win.scroll(function() {
-    if ($(this).scrollTop() > 340 && $(window).width() > 500) {
-      hList.fadeIn();
+    if ($(this).scrollTop() > 200 && $win.width() > 600) {
+      menubar.fadeIn();
     } else {
-      hList.fadeOut();
+      menubar.fadeOut();
     }
   });
 
-  //
-  // var $company = $('.forCompanies');
-  // $win.scroll(function() {
-  //   if ($win.width() > 500) {
-  //     if ($(this).scrollTop() > 150) {
-  //       $company.fadeIn();
-  //     } else {
-  //       $company.fadeOut();
-  //     }
-  //   } else {
-  //     if ($(this).scrollTop() > 200) {
-  //       $company.fadeIn();
-  //     } else {
-  //       $company.fadeOut();
-  //     }
-  //   }
-  // });
+  var bars = $('#bars')
+  $win.scroll(function() {
+    if ($(this).scrollTop() > 200 && $win.width() <= 600) {
+      bars.fadeIn();
+    } else {
+      bars.fadeOut();
+    }
+  });
+
 
   //
   var $pastdata = $('.pastCooperations');
   $win.scroll(function() {
     if ($win.width() > 500) {
-      if ($(this).scrollTop() > 400) {
+      if ($(this).scrollTop() > 50) {
         $pastdata.fadeIn();
       } else {
         $pastdata.fadeOut();
       }
     } else {
-      if ($(this).scrollTop() > 200) {
+      if ($(this).scrollTop() > 60) {
         $pastdata.fadeIn();
       } else {
         $pastdata.fadeOut();
