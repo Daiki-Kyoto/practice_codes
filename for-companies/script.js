@@ -31,7 +31,6 @@ $(function() {
   });
 
 
-  //
   var $pastdata = $('.pastCooperations');
   $win.scroll(function() {
     if ($win.width() > 500) {
