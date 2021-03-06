@@ -63,22 +63,23 @@
 
   section {
     width: 1000px;
-    /* display: flex; */
   }
   section h1 {
     padding-bottom: 30px;
   }
-
   section img {
     width: 500px;
-
+    float: left;
   }
   .explain {
     width: 500px;
     box-sizing: border-box;
-    padding: 20px 12px;
-    float: right;
+    padding: 0 12px 20px;
     align-self: center;
+    float: right;
+  }
+  .explain p {
+    font-size: 18px;
   }
 
 
