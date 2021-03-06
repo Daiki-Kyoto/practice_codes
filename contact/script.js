@@ -1,14 +1,35 @@
 $(function() {
-  // ヘッダーのナビゲーションを一定スクロールで表示
-  var hList = $('.h-list');
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 340 && $(window).width() > 500) {
-      hList.fadeIn();
+    document.getElementById('count').innerText = $(this).scrollTop();
+  });
+
+  $('.menu-icon').click(function() {
+    $('#sidemenu').toggle();
+  });
+
+
+  // ヘッダーのナビゲーションを一定スクロールで表示
+  var $win = $(window)
+
+  var menubar = $('#menubar');
+  $win.scroll(function() {
+    if ($(this).scrollTop() > 200 && $win.width() > 600) {
+      menubar.fadeIn();
     } else {
-      hList.fadeOut();
+      menubar.fadeOut();
     }
   });
+
+  var bars = $('#bars')
+  $win.scroll(function() {
+    if ($(this).scrollTop() > 200 && $win.width() <= 600) {
+      bars.fadeIn();
+    } else {
+      bars.fadeOut();
+    }
+  });
+
 
 
 });

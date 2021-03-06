@@ -49,6 +49,9 @@
     padding: 0 48px;
     font-size: 24px;
   }
+  .h-txt h1 {
+    font-size: 32px;
+  }
 
   footer {
     height: 150px;
