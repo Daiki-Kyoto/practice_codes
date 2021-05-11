@@ -12,10 +12,25 @@
 
 @media (min-width: 600px) {
   main {
-    height: 9400px;
+    height: 7600px;
   }
   #bars {
     display: none;
+  }
+
+  main > .wrap {
+    margin-left: 50px;
+  }
+
+  .member {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .profile {
+    width: 200px;
+    margin-top: 50px;
   }
 
 
@@ -41,18 +56,31 @@
 
 @media (min-width: 1000px) {
   main {
-    height: 9500px;
+    height: 7500px;
   }
   .headerOuter-wrap {
     height: 400px;
   }
   .headerOuter-wrap li a {
     padding: 0 48px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .h-txt h1 {
     font-size: 32px;
   }
+
+
+  .sidebanner {
+    left: 80px;
+    width: 100px;
+    height: 276px;
+    font-size: 18px;
+    top: 500px;
+  }
+
+
+
+
 
   footer {
     height: 150px;

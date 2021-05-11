@@ -19,8 +19,11 @@
 }
 
 @media (min-width: 600px) {
+  body {
+    font-size: 15px;
+  }
   main {
-    height: 1600px;
+    height: 2000px;
   }
   #bars {
     display: none;
@@ -62,8 +65,11 @@
   .tab {
     display: none;
   }
+  body {
+    font-size: 18px;
+  }
   main {
-    height: 1550px;
+    height: 2100px;
   }
   .h-txt h1, .h-txt h1 span {
     font-size: 32px;
