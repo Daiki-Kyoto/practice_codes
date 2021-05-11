@@ -21,6 +21,11 @@
     display: none;
   }
 
+  .sidebanner {
+    height: 250px;
+    width: 70px;
+  }
+
   main > .wrap {
     margin-left: 50px;
   }
@@ -60,6 +65,9 @@
 @media (min-width: 1000px) {
   body {
     font-size: 18px;
+  }
+  main > .wrap {
+    margin: 0 auto;
   }
   main {
     height: 7500px;
